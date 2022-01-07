@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <LinearLayout
+        android:id="@+id/adView6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_above="@+id/buttom_navigation"
+        android:orientation="vertical" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttom_navigation"
+        app:itemBackground="@color/white"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#9C27B0"
+        app:itemIconTint="#FF5722"
+        app:menu="@menu/activity_main_drawer"
+       />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@drawable/cardpur"
+    android:id="@+id/user_layout">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+       android:layout_marginLeft="10dp"
+        android:layout_height="150dp"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="30dp"
+       >
+        <ImageView
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:id="@+id/profileImage"
+
+            android:src="@drawable/ic_man"
+            android:scaleType="centerCrop"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+android:layout_marginTop="50dp"
+
+            android:layout_marginLeft="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textColor="@color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="85dp"
+    android:fontFamily="@font/aclonica"
+    android:textSize="22sp"
+
+    android:id="@+id/profileUN"/>
+
+</LinearLayout>
+  <androidx.cardview.widget.CardView
+
+      app:cardCornerRadius="10dp"
+      android:elevation="20dp"
+      android:id="@+id/email_card"
+      android:layout_width="match_parent"
+      android:layout_margin="25dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/user_layout">
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:src="@drawable/ic_message"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#504D4D"
+        android:hint="Email"
+        android:fontFamily="@font/aclonica"
+
+        />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/profileEmail"
+android:layout_marginTop="30dp"
+          android:layout_marginLeft="70dp"
+          android:textColor="@color/black"
+          android:layout_centerHorizontal="true"
+          android:textSize="22sp"
+          android:text=""
+          android:fontFamily="@font/aclonica"
+
+          />
+  </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:elevation="20dp"
+        android:background="@drawable/roundqus"
+        app:backgroundTint="#EA1A1A"
+      android:layout_above="@+id/adView6"
+       android:textColor="@color/white"
+        android:text="logout"
+
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="change image"
+android:layout_below="@id/user_layout"
+        android:id="@+id/changeProfile"
+        android:textSize="16sp"
+        android:textColor="#3F51B5"
+        />
+
+</RelativeLayout>

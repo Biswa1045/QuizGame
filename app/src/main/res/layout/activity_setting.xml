@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".settingActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_sett"
+        android:layout_height="50dp"
+        android:background="@drawable/cardorg"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="settings"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/adView8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:orientation="vertical"
+        android:layout_above="@+id/buttom_navigation"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="#9C27B0"
+        app:itemIconTint="#FF5722"
+        app:menu="@menu/activity_main_drawer"
+        android:layout_alignParentBottom="true"/>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/toolbar_sett"
+    android:id="@+id/card_1"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/ic_baseline_security_24"/>
+    <TextView
+        android:id="@+id/pp_sett"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+       />
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/card_1"
+        android:id="@+id/card_2"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/ic_baseline_feedback_24"/>
+        <TextView
+            android:id="@+id/feedback_sett"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feedback"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/card_2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/card_3"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/ic_baseline_stars_24"/>
+        <TextView
+android:id="@+id/share_sett"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this app"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/card_3"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/ic_baseline_info_24"/>
+        <TextView
+
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Version           1.0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

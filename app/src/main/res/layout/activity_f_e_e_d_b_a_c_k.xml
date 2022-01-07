@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+
+android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".FEEDBACKActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+android:textAlignment="center"
+
+        android:background="@drawable/cardred"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+   android:orientation="vertical"
+
+    android:padding="10dp"
+    android:id="@+id/www"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback_sub"
+        android:hint="Subject"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/border_btn"
+        android:textColorHint="#673AB7"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback_feedback"
+
+        android:hint="feedback"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border_btn"
+        android:textColorHint="#673AB7"/>
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/www"
+        android:id="@+id/feedback_btn"
+        android:text="SEND"
+
+        android:textColor="#673AB7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_btn"/>
+</RelativeLayout>
